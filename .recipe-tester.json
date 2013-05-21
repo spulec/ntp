@@ -1,8 +1,9 @@
 {
+    "type": "chef-solo",
     "ami": "ami-c30360aa",
     "run_list": [
         "recipe[ntp::default]",
-        "recipe[ntp::disable]"
+        "recipe[ntp::ntpdate]"
     ],
     "data_bags": [{
         "aws_keys": {
