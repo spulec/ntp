@@ -5,11 +5,16 @@
         "recipe[ntp::default]",
         "recipe[ntp::ntpdate]"
     ],
-    "data_bags": [{
+    "data_bags": {
         "aws_keys": {
-            "id": "s3_key",
-            "access_key": "123abc",
-            "secret_key": "abcdef"
+            "s3_key" : {
+                "access_key": "123abc",
+                "secret_key": "abcdef"
+            },
+            "config": {
+                "var1": "foo",
+                "var2": "bar"
+            }
         }
-    }]
+    }
 }
