@@ -7,7 +7,7 @@
     ],
     "data_bags": {
         "aws_keys": {
-            "s3_key" : {
+            "s3_key": {
                 "access_key": "123abc",
                 "secret_key": "abcdef"
             },
